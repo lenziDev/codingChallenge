@@ -1,2 +1,3 @@
 /venv/
 /codingChallenge/__pycache__/
+.env
