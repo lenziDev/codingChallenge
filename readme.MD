@@ -1,6 +1,5 @@
 # <a name="config"></a>Configuration
 - Copy the file .env.example and add your credentials to a new file called .env
-<br>
 - Set a summarize method, you can find more on [Documentation](https://documenter.getpostman.com/view/16968523/UVkiRxbJ), possible SUMMARIZE_METHOD values are 
     - **LSA**
     - **LexRank**
