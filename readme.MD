@@ -1,6 +1,5 @@
 # <a name="config"></a>Configuration
 - Copy the file .env.example and add your credentials to a new file called .env
-<br>
 - Set a summarize method, you can find more on [Documentation](https://documenter.getpostman.com/view/16968523/UVkiRxbJ), possible SUMMARIZE_METHOD values are 
     - **LSA**
     - **LexRank**
@@ -11,7 +10,11 @@
 
         pip install -r requirements.txt
 
-- Run migrations (On root project directory)
+- Make the migrations (On root project directory)
+
+        python manage.py makemigrations
+
+- Run migrations 
 
         python manage.py migrate
 
@@ -20,6 +23,8 @@
 - Run the app
 
         python manage.py runserver
+
+The app will be running on 0.0.0.0:8000
 
 # Using Docker-Compose
 
@@ -32,6 +37,8 @@
 - Run the containers
 
         docker-compose up
+
+The app will be running on 0.0.0.0:7777
 
 # Testing
 
