@@ -1,8 +1,41 @@
-No root
+# Installation
 
-docker-compose build
+###<a name="config"></a>Configuration
+- Copy the file .env.example and add your credentials to a new file called .env
+- Possible SUMMARIZE_METHOD values are ["LSA", "LexRank", "Luhn"]
+# Installation
 
-docker-compose up
+- Install dependencies
 
+        pip install -r requirements.txt
 
-possible SUMMARIZE_METHOD values are ["LSA", "LexRank", "Luhn"]
+- Run migrations (On root project directory)
+
+        python manage.py migrate
+
+# Run application
+
+- Run the app
+
+        python manage.py runserver
+
+# Using Docker-Compose
+
+- The configuration .env must be specified [too](#config)
+
+- Build project images
+
+        docker-compose build
+
+- Run the containers
+
+        docker-compose up
+
+# Testing
+
+- You can use the following command on the project root
+
+        python manage.py test
+# Documentation
+
+You can find the documentation on [LINK](https://documenter.getpostman.com/view/16968523/UVkiRxbJ)
