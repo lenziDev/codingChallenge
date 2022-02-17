@@ -20,8 +20,6 @@ class Document(models.Model):
         return Sumy(self.text).LSA()
 
     def set_summary(self, method="LSA"):
-        print(f"------------ App running using {method}")
-
         if method == "LSA":
             self.summary = self.normalize_sentences(self.summarize_sumy_LSA())
         elif method == "LexRank":

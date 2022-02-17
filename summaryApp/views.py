@@ -7,7 +7,6 @@ from .serializers import *
 class DocumentUniqueAPIView(APIView):
     def get(self, request, pk, format=None):
         try:
-            print("pk ---", pk)
             item = Document.objects.get(id=pk)
             serializer = DocumentRetrieveSerializer(item)
             return Response(serializer.data)
